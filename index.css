@@ -1,0 +1,101 @@
+html,
+body {
+  margin: 0;
+  background-color: #240046;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  user-select: none;
+}
+
+h1 {
+  font-weight: 600;
+}
+
+#header-image {
+  width: 175px;
+  margin-top: 20px;
+}
+
+.dotted {
+  border: 1px dotted blue;
+}
+
+#input-area {
+  width: 100%;
+  max-width: 270px;
+  margin: 0px auto;
+  position: relative;
+}
+
+#input-area textarea {
+  width: 100%;
+  width: 250px;
+  background-color: #3c096c;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  color: #e0aaff;
+  resize: none;
+}
+
+#input-area span {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #9d4edd;
+  transition: transform 0.35s ease-in-out, background-color 0.35s ease-in-out,
+    font-size 0.35s ease-in-out, border 0.35s ease-in-out;
+}
+
+#input-area textarea:valid ~ span,
+#input-area textarea:focus ~ span {
+  color: white;
+  transform: translateX(10px) translateY(-17px);
+  font-size: 0.75rem;
+  padding: 5px;
+  background-color: #240046;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+button {
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    width: 270px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    background-color: #7b2cbf;
+    color: #240046;
+    transition: transform 0.35s, color 0.35s, background-color 0.35s
+}
+
+button:hover {
+    transform: translateY(-15px);
+    background-color: #1a759f;
+    color: white;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul li {
+  max-width: 370px;
+  width: 80%;
+  padding: 10px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  color: black;
+  margin: 10px auto;
+}
